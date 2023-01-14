@@ -1,0 +1,314 @@
+/* Common Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Poppins:wght@500&family=Work+Sans&display=swap');
+
+body{
+    width: 100%;
+    background-size: contain;
+    font-family: 'Work Sans';
+    background-size: contain;
+}
+p{
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.primary-button{
+    color: #FFFFFF;
+    background-color: #FF900E;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    padding: 20px;
+}
+/* Header style----------------------------------- */
+.header{
+    background-color: rgba(255, 144, 14, 0.1);
+    height: auto;
+}
+.header-title{
+    font-size: 45px;
+    font-weight: 700;
+}
+.head-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+    gap: 1rem;
+}
+nav li{
+    list-style: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.banner{
+    margin: 0 4rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-title{
+    font-size: 54px ;
+    font-weight: 800;
+    padding: 0 300px;
+}
+.banner-description{
+    padding: 20px;
+}
+.banner-image{
+    width: 100%;
+  }
+  .banner-image img{
+      width: 100%;
+  }
+
+
+
+/* ----------------------------------------------Main Styles-------------------------------- */
+
+.teams{
+    display: flex;
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 50px;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.team-title{
+    font-size: 45px;
+    font-weight: 500;
+}
+.span-one{
+    color: #727272;
+}
+.span-two{
+    color: #131313;
+}
+.span-three{
+    color: #FF900E;
+}
+.explore{
+    font-size: 15px;
+}
+
+/*---------------------------------- Section Two-------------------------- */
+.section-two{
+   align-items: center;
+}
+.feature{
+    display: flex;
+    padding: 70px;
+}
+.feature-item{
+    margin-right: 30px;
+}
+.feature-title{
+    font-size: 45px;
+    font-weight: 700;
+}
+.f-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.display{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-area: sidebar;
+    background: #FFFFFF;
+    gap: 10px;
+}
+.box{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.089);
+    border-radius: 8px;
+    padding: 10px;
+   
+}
+
+.feature-image{
+  width: 100%;
+  position: relative;
+}
+.feature-image img{
+    width: 100%;
+    height: 900px;
+}
+
+
+/* ------------------------------------------section 3------------------------------------- */
+
+.fact-description{
+    text-align: left;
+    padding: 30px;
+    padding-left: 110px;
+    padding-right: 400px;
+}
+.fact{
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+.fact-item{
+    border: 1px solid #FF900E;
+   text-align: center;
+   width: 150px;
+   border-radius: 5px;
+   padding: 20px;
+}
+/* Hover effect on the box */
+.fact-item:hover{
+    transition: transform 1s linear;
+    transform: rotate(10deg);
+    background-color: khaki;
+}
+/* Hover effect on box img  */
+.fact-item img:hover {
+    transition: transform 1s linear;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+/* ---------------------------------Secton 4 --------------------------------*/
+.sponsors{
+    padding: 150px;
+}
+.sponsor-description{
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.sponsor{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.sponsor-logo{
+    margin-top: 20px;
+    filter: grayscale(100%);
+}
+
+/* Bonus Section */
+
+/* Footer */
+.footer{
+    background-color: rgba(255, 144, 14, 0.1);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    
+}
+
+/* Staring responsive media query */
+
+@media only screen and (max-width: 576px) {
+    body{
+        width: 100%;
+        background-size: contain;
+    }
+    p{
+        font-size: 10px;
+    }
+    .primary-button{
+        font-size: 10px;
+        padding: 10px;
+    }
+    .header-title{
+        font-size: 20px ;
+    }
+    .head-bar{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-item{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 32px;
+        padding: 0;
+    }
+    .team-title{
+       font-size:26px ; 
+    }
+    .teams{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+        gap: 10px;
+    }
+    .team{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .feature-title{
+        font-size: 16px;
+    }
+    .feature-image{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .feature-image{
+        width: 100%;
+    }
+    .fact{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .fact-item{
+        padding: 0;
+        margin: 0;
+    }
+    .fact-description{
+        text-align: center;
+        padding: 0;
+    }
+    .sponsor-description{
+       text-align: center;
+       padding: 0;
+ 
+    }
+    .sponsor{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+.footer{
+    margin: 0;
+}
+.hide{
+    display: none;
+}
