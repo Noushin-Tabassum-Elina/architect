@@ -219,6 +219,10 @@ nav li{
     background-color: brown;
     transform: none;
     transition: none;
+    color: aqua;
+}
+.extra .effect:hover{
+    color: aqua;
 }
 /* Footer */
 .footer{
@@ -230,7 +234,7 @@ nav li{
     
 }
 
-/* Staring responsive media query */
+/* ---------------------------Staring responsive media query -----------------------------*/
 
 @media only screen and (max-width: 576px) {
     body{
